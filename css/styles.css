@@ -78,6 +78,13 @@ img {
 .sprite {
   margin-right: 10px;
 }
+.sprite {
+  fill: rgba(117, 117, 117, 1);
+}
+.sprite:hover,
+.sprite:focus {
+  fill: var(--color-accent);
+}
 .header-nav {
   display: flex;
   align-items: center;
@@ -149,6 +156,7 @@ img {
 }
 
 .description {
+  width: 700px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -248,7 +256,6 @@ img {
 /* end what we are doing */
 
 /* our team */
-
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -291,14 +298,15 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: currentColor;
+  fill: rgba(175, 177, 184, 1);
 }
+
 .list-links:hover,
 .list-links:focus {
   background: var(--color-accent);
 }
 .list-links:hover {
-  color: var(--main-white-color);
+  fill: var(--main-white-color);
 }
 .section-team {
   background: #f5f4fa;
@@ -336,13 +344,16 @@ img {
   border-radius: 4px;
   width: 170px;
   height: 90px;
-  color: rgba(175, 177, 184, 1);
+  fill: rgba(175, 177, 184, 1);
+}
+.border-pic:hover,
+.border-pic:focus,
+.border:hover,
+.border:focus {
+  fill: var(--color-accent);
 }
 .border:not(:last-child) {
   margin-right: 30px;
-}
-.border-pic {
-  color: rgba(175, 177, 184, 1);
 }
 .text {
   font-weight: 700;
@@ -353,7 +364,6 @@ img {
   color: #212121;
   margin-bottom: 50px;
 }
-
 /* footer */
 .footer {
   padding-top: 60px;
@@ -413,6 +423,11 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 1);
+}
+.join-item:hover,
+.join-item:focus {
+  background: var(--color-accent);
 }
 .social-items {
   width: 20px;
@@ -421,18 +436,15 @@ img {
 .join-link {
   color: #188ce8;
 }
-
 /* end footer */
 
 /* portfolio */
 /* h1 our works */
-
 .btn-container {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-
 .nav-btn:not(:last-child) {
   margin-right: 8px;
 }
@@ -479,7 +491,8 @@ img {
 .button-portfolio:focus {
   background: var(--color-accent);
 }
-.button-portfolio:hover {
+.button-portfolio:hover,
+.button-portfolio:focus {
   color: var(--main-white-color);
 }
 .port-content {
