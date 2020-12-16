@@ -78,13 +78,6 @@ img {
 .sprite {
   margin-right: 10px;
 }
-.sprite {
-  fill: rgba(117, 117, 117, 1);
-}
-.sprite:hover,
-.sprite:focus {
-  fill: var(--color-accent);
-}
 .header-nav {
   display: flex;
   align-items: center;
@@ -111,9 +104,13 @@ img {
 .social-link:not(:last-child) {
   margin-right: 50px;
 }
+.item {
+  fill: rgba(117, 117, 117, 1);
+}
 .item:hover,
 .item:focus {
   color: var(--color-accent);
+  fill: var(--color-accent);
 }
 .item {
   display: inline-block;
@@ -128,7 +125,6 @@ img {
   color: var(--main-grey-color);
 }
 /*end-header*/
-
 /* hero */
 .hero .container {
   display: flex;
@@ -346,11 +342,15 @@ img {
   height: 90px;
   fill: rgba(175, 177, 184, 1);
 }
-.border-pic:hover,
-.border-pic:focus,
-.border:hover,
-.border:focus {
-  fill: var(--color-accent);
+
+/* .border {
+  fill: rgba(175, 177, 184, 1);
+} */
+.clients-list:hover,
+.clients-list:focus {
+  fill: currentColor;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
 }
 .border:not(:last-child) {
   margin-right: 30px;
